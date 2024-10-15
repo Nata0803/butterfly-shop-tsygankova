@@ -121,3 +121,6 @@ project
 * 1.0.2 - изменен readme.md
 * 1.0.1 - отслеживание изменений в js-файлах и перезагрузка страницы
 * 1.0.0 - создание сборки
+=======
+# butterfly-shop-tsygankova
+Project for homework
