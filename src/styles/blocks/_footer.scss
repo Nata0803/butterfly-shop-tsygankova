@@ -1,0 +1,41 @@
+.footer {
+  padding: 31px 0;
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+.footer_nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo {
+  margin-right: auto;
+  font-family: $font;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 57px;
+}
+
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer_tel {
+  font-family: $font;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.social_links {
+  display: flex;
+  gap: 15px;
+}
+
+.social_link {
+  width: 26px;
+  height: 26px;
+}

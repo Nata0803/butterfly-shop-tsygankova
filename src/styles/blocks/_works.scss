@@ -1,0 +1,19 @@
+.works {
+  padding: 130px 0;
+  background-color: $color-light;
+}
+
+.works_title {
+  margin-bottom: 97px;
+  font-family: $font;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 87px;
+  color: $color-dark;
+  text-align: center;
+}
+
+.works_list {
+  display: flex;
+  gap: 20px;
+}

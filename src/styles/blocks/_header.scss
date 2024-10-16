@@ -1,0 +1,23 @@
+.header {
+  padding: 16px 0 17px 0;
+  background-color: $color-dark;
+
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header_logo {
+  margin-right: auto;
+  text-align: center;
+  font-family: $font;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 57px;
+  color: $color-light;
+
+  &:hover{
+    color: $color-accent;
+  }
+}

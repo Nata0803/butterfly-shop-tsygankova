@@ -1,0 +1,23 @@
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header_list li {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-light;
+
+  a {
+    display: inline-block;
+    padding: 33px 25px;
+    color: inherit;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

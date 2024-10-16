@@ -1,11 +1,14 @@
 .promo {
   padding: 200px 82px 214px 82px;
-  background-image: url(../images/bg-promo.jpg);
+  background-color: $color-dark;
+  background-image: "../images/bg-promo.jpg";
 }
+
 .promo_title {
   font-family: $font;
   font-size: 72px;
   font-weight: 600;
   line-height: 98px;
+  text-align: center;
   color: #ffffff;
 }

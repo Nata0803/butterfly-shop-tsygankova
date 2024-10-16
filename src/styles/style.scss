@@ -1,8 +1,14 @@
 // common files
 @import "common/_variables";
-@import "common/mixins";
+@import "common/_mixins";
 @import "common/_fonts";
 @import "common/_common";
 
 // blocks
-@import "blocks/_promo";
+@import "blocks/_header.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_promo.scss";
+@import "blocks/_works.scss";
+@import "blocks/_order.scss";
+@import "blocks/_form.scss";
+@import "blocks/_footer.scss";
