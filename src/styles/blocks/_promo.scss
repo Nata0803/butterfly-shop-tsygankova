@@ -1,7 +1,10 @@
 .promo {
   padding: 200px 82px 214px 82px;
   background-color: $color-dark;
-  background-image: "../images/bg-promo.jpg";
+  background-image: url("../images/bg-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .promo_title {
