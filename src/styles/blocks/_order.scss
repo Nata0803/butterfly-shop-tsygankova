@@ -5,12 +5,7 @@
 
 .order_title {
   margin-bottom: 40px;
-  font-family: $font;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 87px;
-  text-align: center;
-  color: $color-dark;
+  @include h2;
 }
 
 .order_desk {

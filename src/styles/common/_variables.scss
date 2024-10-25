@@ -2,3 +2,10 @@ $font: 'Open Sans', sans-serif;
 $color-dark:#333333;
 $color-accent: #FF2D2D;
 $color-light:#FFFFFF;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$mobile-max: $tablet -1px;
+$tablet-max: $desktop - 1px;

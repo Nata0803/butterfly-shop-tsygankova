@@ -1,10 +1,18 @@
 .promo {
-  padding: 200px 82px 214px 82px;
+  padding: 200px 0 214px;
   background-color: $color-dark;
   background-image: url("../images/bg-promo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: $tablet-max) {
+    padding: 180px 0 190px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 110px 0 100px;
+  }
 }
 
 .promo_title {
@@ -15,4 +23,15 @@
   line-height: 98px;
   text-align: center;
   color: #ffffff;
+
+  @media(max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 44px;
+  }
 }

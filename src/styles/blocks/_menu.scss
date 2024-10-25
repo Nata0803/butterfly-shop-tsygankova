@@ -1,3 +1,8 @@
+.header_nav{
+  @media (max-width: $mobile-max){
+    display: none;
+  }
+}
 .header_list {
   display: flex;
   flex-wrap: wrap;
