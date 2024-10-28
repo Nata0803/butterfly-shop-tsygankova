@@ -5,6 +5,15 @@
 
 .order_title {
   margin-bottom: 40px;
+
+  @media(max-width: $tablet-max) {
+    margin-bottom: 40px;
+  }
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
+
   @include h2;
 }
 
@@ -16,4 +25,14 @@
   line-height: 38px;
   text-align: center;
   color: $color-dark;
+
+  @media(max-width: $tablet-max) {
+    margin-bottom: 90px;
+  }
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

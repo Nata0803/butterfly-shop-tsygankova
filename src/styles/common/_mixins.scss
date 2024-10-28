@@ -1,6 +1,14 @@
 @mixin inner{
   width: 1278px;
   margin: 0 auto;
+
+  @media(max-width: $tablet-max) {
+    width: 768px;
+  }
+
+  @media(max-width: $mobile-max) {
+    width: 320px;
+  }
 }
 
 @mixin h2{

@@ -2,11 +2,24 @@
   padding: 31px 0;
   background-color: $color-dark;
   color: $color-light;
+
+  @media(max-width: $tablet-max) {
+    padding: 35px 0;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 30px 0 35px;
+  }
 }
 
 .footer_nav {
   display: flex;
   align-items: center;
+
+
+  @media(max-width: $mobile-max) {
+    flex-direction: column;
+  }
 }
 
 .footer_logo {
