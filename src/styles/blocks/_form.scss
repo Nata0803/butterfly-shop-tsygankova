@@ -1,11 +1,30 @@
 .form {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+
+  @media(max-width: $tablet-max) {
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  @media(max-width: $mobile-max) {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 
 .form_field {
   flex-basis: calc(33.33% - 40px / 3);
   justify-content: center;
+
+  @media(max-width: $tablet-max) {
+    flex-basis: calc(50% - 10px);
+  }
+
+  @media(max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
 .form_text {
@@ -21,6 +40,7 @@
   text-align: left;
   color: $color-dark;
 }
+
 
 .form_label {
   font-family: $font;
