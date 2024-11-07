@@ -31,6 +31,7 @@
 
   @media(max-width: $tablet-max) {
     flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 
   @media(max-width: $mobile-max) {
@@ -42,6 +43,7 @@
   margin-bottom: 120px;
 
   @media(max-width: $tablet-max) {
+    margin-bottom: 0;
     flex-basis: calc(50% - 10px);
   }
 
@@ -52,6 +54,12 @@
 
 .works_figure {
   position: relative;
+
+  @media(max-width: $tablet-max) {
+    .works_img {
+      width: 100%;
+    };
+  }
 }
 
 .works_img-desk {
