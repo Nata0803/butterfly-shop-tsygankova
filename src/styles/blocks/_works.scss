@@ -11,9 +11,13 @@
   }
 }
 
+.works_inner {
+  @include inner;
+}
+
 .works_title {
   margin-bottom: 97px;
-  @include h2;
+  @include title;
 
   @media(max-width: $tablet-max) {
     margin-bottom: 80px;

@@ -16,6 +16,10 @@
   }
 }
 
+.promo_inner {
+  @include inner;
+}
+
 .promo_title {
   margin-bottom: 100px;
   font-family: $font;

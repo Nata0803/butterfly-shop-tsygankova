@@ -1,5 +1,7 @@
-@mixin inner{
-  width: 1278px;
+@mixin inner {
+  max-width: 1278px + 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 
   @media(max-width: $tablet-max) {
@@ -11,7 +13,7 @@
   }
 }
 
-@mixin h2{
+@mixin title {
   font-family: $font;
   text-align: center;
   font-size: 64px;
@@ -19,12 +21,12 @@
   line-height: 87px;
   color: $color-dark;
 
-  @media (max-width: $tablet-max){
+  @media (max-width: $tablet-max) {
   font-size: 60px;
   line-height: 82px;
   }
 
-  @media (max-width: $mobile-max){
+  @media (max-width: $mobile-max) {
     font-size: 36px;
     line-height: 49px;
   }

@@ -12,6 +12,10 @@
   }
 }
 
+.footer_inner {
+  @include inner;
+}
+
 .footer_nav {
   display: flex;
   align-items: center;
@@ -23,11 +27,27 @@
 }
 
 .footer_logo {
+  display: inline-block;
   margin-right: auto;
   font-family: $font;
   font-size: 42px;
   font-weight: 600;
   line-height: 57px;
+  color: $color-light;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  @media (max-width: $tablet-max){
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media(max-width: $mobile-max){
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 .footer_wrap {

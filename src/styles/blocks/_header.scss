@@ -4,13 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 16px 0 17px 0;
   background-color: $color-dark;
-
-  .inner {
-    display: flex;
-    align-items: center;
-  }
 
   @media(max-width: $tablet-max) {
     padding: 20px 0 21px;
@@ -18,11 +12,17 @@
   @media (max-width: $mobile-max){
     padding: 16px 0;
   }
+
+  .header_inner {
+    @include inner;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header_logo {
+  display: inline-block;
   margin-right: auto;
-  text-align: center;
   font-family: $font;
   font-size: 42px;
   font-weight: 600;
@@ -44,11 +44,12 @@
   }
 }
 
-.header_burger{
+.header_burger {
   display: none;
 
   @media (max-width: $mobile-max){
     display: block;
+    background-color: transparent;
     width: 30px;
     height: 30px;
   }

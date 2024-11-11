@@ -3,6 +3,11 @@
   background-color: rgba($color-dark, 0.1);
 }
 
+
+.order_inner {
+  @include inner;
+}
+
 .order_title {
   margin-bottom: 40px;
 
@@ -14,7 +19,7 @@
     margin-bottom: 20px;
   }
 
-  @include h2;
+  @include title;
 }
 
 .order_desk {
