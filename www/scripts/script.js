@@ -1,1 +1,22 @@
-console.log('script work!');
+$document.ready(function(){
+
+
+  let prevAccordionBtn;
+  let openClass = 'open';
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+});
