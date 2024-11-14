@@ -6,10 +6,7 @@
   z-index: 1000;
   background-color: $color-dark;
 
-  @media(max-width: $tablet-max) {
-    padding: 20px 0 21px;
-  }
-  @media (max-width: $mobile-max){
+  @media (max-width: $mobile-max) {
     padding: 16px 0;
   }
 
@@ -52,5 +49,6 @@
     background-color: transparent;
     width: 30px;
     height: 30px;
+    border: none;
   }
 }

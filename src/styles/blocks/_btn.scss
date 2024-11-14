@@ -33,4 +33,8 @@
   @media (max-width: $tablet-max) {
     padding: 34px 305px 36px 322px;
   }
+
+  @media (max-width: $mobile-max) {
+    padding: 34px 86px 36px 93px;
+  }
 }

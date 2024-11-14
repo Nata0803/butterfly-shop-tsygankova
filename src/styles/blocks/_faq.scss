@@ -1,7 +1,16 @@
 .questions {
   padding: 130px 0;
   background-color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
+
 
 .questions_inner {
   @include inner;
@@ -10,12 +19,30 @@
 .questions_title {
   margin-bottom: 80px;
   @include title;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
+  }
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.accordion {
+  overflow: hidden;
+  border: 1px solid rgba(#FF2D2D33, .2);
+  background-color: $color-light;
+  box-shadow: 0 0 8px rgba($color-accent, .2);
 }
 
 .accordion_btn {
+  display: flex;
+  justify-content: space-between;
   padding: 25px 0 25px 30px;
   width: 100%;
-  border: 1px solid rgba(#FF2D2D33, .2);
+  border: none;
   font-family: $font;
   font-size: 36px;
   font-weight: 300;
@@ -23,14 +50,100 @@
   text-align: left;
   color: #152B3C;
   background-color: $color-light;
+  cursor: pointer;
+
+  @media (max-width: $tablet-max) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 15px 0 15px 15px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &.open {
+    .accordion_icon:after {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+}
+
+.accordion_icon {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 28px;
+  margin-top: 6px;
+
+  @media(max-width: $mobile-max) {
+    width: 30px;
+    height: 30px;
+    margin-right: 27px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: $color-accent;
+  }
+
+  &:before {
+    width: 40px;
+    height: 2px;
+
+    @media(max-width: $mobile-max) {
+      width: 30px;
+    }
+  }
+
+  &:after {
+    width: 2px;
+    height: 40px;
+    transition: all .3s ease;
+
+    @media(max-width: $mobile-max) {
+      height: 30px;
+    }
+  }
+}
+
+.accordion_first {
+  margin-bottom: 40px;
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .accordion_answer {
+  display: none;
+  padding: 0 74px 30px 30px;
   font-family: $font;
   font-size: 18px;
   font-weight: 300;
   line-height: 25px;
   color: #000000;
+
+  @media (max-width: $tablet-max) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media(max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
   p {
     margin-bottom: 30px;

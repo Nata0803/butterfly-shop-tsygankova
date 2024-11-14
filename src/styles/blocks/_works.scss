@@ -41,6 +41,7 @@
 
   @media(max-width: $mobile-max) {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -53,7 +54,7 @@
   }
 
   @media(max-width: $mobile-max) {
-    padding: 90px 0;
+    margin: 0;
   }
 }
 

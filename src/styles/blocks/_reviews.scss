@@ -1,0 +1,30 @@
+.reviews {
+  padding: 130px 0;
+  background-color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 90px 0;
+  }
+}
+
+.reviews_inner {
+  @include inner;
+}
+
+.reviews_title {
+  margin-bottom: 80px;
+  @include title;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
+  }
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
+}
+

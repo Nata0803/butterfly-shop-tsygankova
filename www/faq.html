@@ -12,15 +12,15 @@
   <header class="header">
     <div class="header_inner">
       <a href="index.html" class="header_logo">Butterfly</a>
-      <nav class="menu">
+      <nav class="menu js-menu">
         <ul class="menu_list">
           <li><a href="works.html">Каталог</a></li>
-          <li><a href="rewievs.html">Отзывы</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
           <li><a href="contacts.html">Контакты</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
-      <button class="header_burger">
+      <button class="header_burger js-burger">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_10_468)">
             <path d="M0 0H30V3.33333H0V0Z" fill="white" />
@@ -42,8 +42,10 @@
     <section class="questions">
       <div class="questions_inner">
         <h1 class="questions_title">Как мы работаем</h1>
-        <div class="accordion">
-          <button class="accordion_btn js-accordion-btn">Как можно оплатить заказ?</button>
+        <div class="accordion accordion_first">
+          <button class="accordion_btn js-accordion-btn">Как можно оплатить заказ?
+            <i class="accordion_icon"></i>
+          </button>
           <div class="accordion_answer">
             <p>
               Принимая во внимание показатели успешности, реализация намеченных плановых заданий является качественно
@@ -63,7 +65,9 @@
           </div>
         </div>
         <div class="accordion">
-          <button class="accordion_btn">Как получить готовый заказ?</button>
+          <button class="accordion_btn js-accordion-btn">Как получить готовый заказ?
+            <i class="accordion_icon"></i>
+          </button>
           <div class="accordion_answer">
             <p>
               Принимая во внимание показатели успешности, реализация намеченных плановых заданий является качественно
@@ -158,7 +162,7 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/Download jQuery _ jQuery_files/jquery-3.7.1.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 

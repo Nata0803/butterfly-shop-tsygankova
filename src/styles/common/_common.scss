@@ -12,7 +12,11 @@ body {
   font-family: $font;
 
   @media(max-width: $tablet-max) {
-    padding-top: 71px;
+    padding-top: 89px;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding-top: 69px;
   }
 }
 
