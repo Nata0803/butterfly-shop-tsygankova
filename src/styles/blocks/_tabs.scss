@@ -1,8 +1,13 @@
 .tabs {
+  width: 100%;
   display: flex;
   gap: 50px;
   justify-content: center;
   margin-bottom: 40px;
+
+  a {
+    color: inherit;
+  }
 
   @media (max-width: $tablet-max) {
     gap: 30px;

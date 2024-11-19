@@ -30,24 +30,22 @@
 }
 
 .works_list {
+  margin-bottom: 129px;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
 
   @media(max-width: $tablet-max) {
-    flex-wrap: wrap;
     margin-bottom: 80px;
   }
 
   @media(max-width: $mobile-max) {
-    flex-wrap: wrap;
     flex-direction: column;
   }
 }
 
 .works_item {
-  margin-bottom: 120px;
-
   @media(max-width: $tablet-max) {
     margin-bottom: 0;
     flex-basis: calc(50% - 10px);

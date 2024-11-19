@@ -40,9 +40,11 @@
 .contacts_tab-wrap {
   display: flex;
   gap: 145px;
+  justify-content: flex-end;
 
   @media (max-width: $tablet-max) {
-    gap: 21px;;
+    gap: 21px;
+    justify-content: center;
   }
 
   @media(max-width: $mobile-max) {
